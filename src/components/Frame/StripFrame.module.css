@@ -1,0 +1,76 @@
+.stripContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slot {
+  background-color: rgba(128, 128, 128, 0.1);
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.slot.dragging {
+  opacity: 0.5;
+}
+
+.slotImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.emptySlot {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  border: 2px dashed rgba(128, 128, 128, 0.3);
+  border-radius: 4px;
+}
+
+.slotOverlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.slot:hover .slotOverlay {
+  opacity: 1;
+}
+
+.labelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.labelInput {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 2.5rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  width: 100%;
+  outline: none;
+}
+
+.labelInput::placeholder {
+  color: rgba(128, 128, 128, 0.5);
+}
