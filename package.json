@@ -1,7 +1,13 @@
 {
-  "name": "travel-log-v2",
+  "name": "tokyo-memories",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "An interactive photo gallery for creating retro lo-fi Polaroid collages.",
+  "author": "thecloer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecloer/Tokyo-memories.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
